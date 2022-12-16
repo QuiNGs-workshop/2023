@@ -76,6 +76,17 @@
   }
 }
 
+table {
+  border:1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th{
+  background-color: #0d6efd;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -490,6 +501,24 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.s{
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.lead-s{
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 .display-1 {
@@ -7645,6 +7674,11 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 .lh-1 {
@@ -7806,8 +7840,9 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 0.8;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: url("pride_flags_header.png");
 }
 
 .bg-secondary {
